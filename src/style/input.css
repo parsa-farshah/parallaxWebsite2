@@ -8,15 +8,29 @@
   font-family: helvetical;
   src: url(../fonts/HelveticaNeueBold.otf);
 }
+@font-face {
+  font-family: editorial;
+  src: url(../fonts/PPEditorialNew-Italic-BF644b214fb0c0a.otf);
+}
+@font-face {
+  font-family: moriBook;
+  src: url(../fonts/PPMori-Regular.otf);
+}
 
 @layer utilities {
   .moriExtra {
     font-family: moriExtra;
+  }
+  .moriBook {
+    font-family: moriBook;
   }
   .leftCenter {
     left: calc(50% - 1%);
   }
   .helvetical {
     font-family: helvetical;
+  }
+  .editorial {
+    font-family: editorial;
   }
 }
