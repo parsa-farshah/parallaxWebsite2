@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="src/style/output.css" />
   </head>
   <body>
-    <main>
-      <div id="divSc" class="w-full h-[100vh] overflow-y-scroll">
+    <main class="overflow-hidden">
+      <div
+        id="divSc"
+        class="w-[103%] h-[100vh] overflow-y-scroll overflow-x-hidden"
+      >
         <!-- scroll height section -->
-        <div id="divSc" class="w-full h-[500vh] bg-[#ebedec]">
-          <!-- navbar -->
+        <div id="divSc" class="w-full h-[500vh] bg-[#ebedec] relative">
+          <!----------------------------------- navbar --------------------->
           <div
-            class="w-full h-[60px] absolute top-0 left-0 flex items-center justify-between px-7"
+            class="w-full h-[60px] absolute top-0 leftCenter -translate-x-1/2 flex items-center justify-between px-7 z-10"
           >
-            <!-- logo -->
+            <!--------------------------------- logo ------------------------------>
             <figure class="w-[50%] h-[40px]">
-              <img class="w-[40%] h-full" src="src/images/logo.svg" alt="" />
+              <img
+                class="w-[40%] lg:w-[25%] h-full"
+                src="src/images/logo.svg"
+                alt=""
+              />
             </figure>
-            <!-- right side -->
+            <!------------------------------------------- right side -------------->
             <div class="w-[50%] flex justify-end items-center gap-2">
-              <ul class="items-center gap-4 hidden lg:flex">
+              <ul class="items-center gap-4 hidden lg:flex duration-300">
                 <!-- gallery -->
                 <div
                   class="flex items-center overflow-hidden w-[70px] group cursor-pointer"
@@ -77,7 +84,7 @@
               </ul>
               <!-- owner ship -->
               <div
-                class="bg-black w-[120px] h-[30px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group"
+                class="bg-black w-[120px] h-[30px] lg:w-[135] lg:h-[42px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group"
               >
                 <!-- text -->
                 <div class="flex items-center overflow-hidden w-[70px]">
@@ -129,7 +136,32 @@
             </div>
           </div>
           <!-- first section -->
-          <!-- <div class="w-full"></div> -->
+          <div class="w-full h-[100vh] relative">
+            <!-- stage -->
+             <figure class="w-full h-[100%] absolute top-0 left-0">
+              <img class="w-full h-full" src="src/images/stage.jpg" alt="">
+             </figure>
+            <!-- image -->
+            <figure
+              class="w-[160%] md:w-[120%] lg:w-[80%] absolute top-0 leftCenter -translate-x-1/2"
+            >
+              <img
+                class="w-full h-full object-cover"
+                src="src/images/carPng2.webp"
+                alt=""
+              />
+            </figure>
+            <!-- text HF -->
+            <span
+              class="moriExtra text-[#202020] text-[80px] sm:text-[140px] md:text-[180px] lg:text-[250px] absolute top-[8%] left-[2%]"
+              >HF</span
+            >
+            <!-- text 11 -->
+            <span
+              class="helvetical text-[#202020] text-[80px] sm:text-[140px] md:text-[180px] lg:text-[250px] absolute top-[17%] lg:top-[90%] -translate-y-1/2 right-[2%]"
+              >11</span
+            >
+          </div>
         </div>
       </div>
     </main>

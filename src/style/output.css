@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-orange-300: oklch(83.7% 0.128 66.29);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -168,11 +167,41 @@
   .absolute {
     position: absolute;
   }
+  .relative {
+    position: relative;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-\[-20\%\] {
+    top: -20%;
+  }
+  .top-\[-20\] {
+    top: -20;
+  }
+  .top-\[8\%\] {
+    top: 8%;
+  }
+  .top-\[15\%\] {
+    top: 15%;
+  }
+  .top-\[17\%\] {
+    top: 17%;
+  }
+  .top-\[20\%\] {
+    top: 20%;
+  }
+  .right-\[2\%\] {
+    right: 2%;
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
+  }
+  .left-\[2\%\] {
+    left: 2%;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
@@ -189,6 +218,9 @@
   .table {
     display: table;
   }
+  .h-\[9\] {
+    height: 9;
+  }
   .h-\[11px\] {
     height: 11px;
   }
@@ -203,6 +235,12 @@
   }
   .h-\[60px\] {
     height: 60px;
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
+  .h-\[100\%\] {
+    height: 100%;
   }
   .h-\[100vh\] {
     height: 100vh;
@@ -228,20 +266,14 @@
   .w-\[70px\] {
     width: 70px;
   }
-  .w-\[90px\] {
-    width: 90px;
-  }
-  .w-\[100\%\] {
-    width: 100%;
-  }
-  .w-\[110px\] {
-    width: 110px;
+  .w-\[103\%\] {
+    width: 103%;
   }
   .w-\[120px\] {
     width: 120px;
   }
-  .w-fit {
-    width: fit-content;
+  .w-\[160\%\] {
+    width: 160%;
   }
   .w-full {
     width: 100%;
@@ -249,12 +281,16 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .translate-x-\[-70\%\] {
-    --tw-translate-x: -70%;
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-x-\[-80\%\] {
-    --tw-translate-x: -80%;
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-\[-70\%\] {
+    --tw-translate-x: -70%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-x-\[-90\%\] {
@@ -263,6 +299,22 @@
   }
   .translate-x-\[-100\%\] {
     --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * 1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-1\/2 {
+    --tw-translate-y: calc(1/2 * 100%);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .cursor-pointer {
@@ -298,14 +350,11 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
-  }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .overflow-y-scroll {
     overflow-y: scroll;
@@ -323,17 +372,11 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-orange-300 {
-    background-color: var(--color-orange-300);
+  .object-cover {
+    object-fit: cover;
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
-  }
-  .text-center {
-    text-align: center;
-  }
-  .text-\[10px\] {
-    font-size: 10px;
   }
   .text-\[11px\] {
     font-size: 11px;
@@ -341,14 +384,14 @@
   .text-\[12px\] {
     font-size: 12px;
   }
+  .text-\[80px\] {
+    font-size: 80px;
+  }
   .text-\[\#202020\] {
     color: #202020;
   }
   .text-white {
     color: var(--color-white);
-  }
-  .capitalize {
-    text-transform: capitalize;
   }
   .uppercase {
     text-transform: uppercase;
@@ -384,14 +427,6 @@
       }
     }
   }
-  .group-hover\:translate-x-\[10\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        --tw-translate-x: 10;
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
   .group-hover\:translate-x-\[30\%\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -408,14 +443,59 @@
       }
     }
   }
+  .sm\:text-\[140px\] {
+    @media (width >= 40rem) {
+      font-size: 140px;
+    }
+  }
+  .md\:w-\[120\%\] {
+    @media (width >= 48rem) {
+      width: 120%;
+    }
+  }
+  .md\:text-\[180px\] {
+    @media (width >= 48rem) {
+      font-size: 180px;
+    }
+  }
+  .lg\:top-0 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:top-\[40\%\] {
+    @media (width >= 64rem) {
+      top: 40%;
+    }
+  }
+  .lg\:top-\[60\%\] {
+    @media (width >= 64rem) {
+      top: 60%;
+    }
+  }
+  .lg\:top-\[80\%\] {
+    @media (width >= 64rem) {
+      top: 80%;
+    }
+  }
+  .lg\:top-\[90\%\] {
+    @media (width >= 64rem) {
+      top: 90%;
+    }
+  }
+  .lg\:bottom-\[8\%\] {
+    @media (width >= 64rem) {
+      bottom: 8%;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
     }
   }
-  .lg\:w-\[20\%\] {
+  .lg\:h-\[42px\] {
     @media (width >= 64rem) {
-      width: 20%;
+      height: 42px;
     }
   }
   .lg\:w-\[25\%\] {
@@ -423,20 +503,39 @@
       width: 25%;
     }
   }
-  .lg\:w-\[30\%\] {
+  .lg\:w-\[80\%\] {
     @media (width >= 64rem) {
-      width: 30%;
+      width: 80%;
+    }
+  }
+  .lg\:w-\[135\] {
+    @media (width >= 64rem) {
+      width: 135;
+    }
+  }
+  .lg\:text-\[250px\] {
+    @media (width >= 64rem) {
+      font-size: 250px;
     }
   }
 }
 @font-face {
   font-family: moriExtra;
-  src: url(../fonts/PPMori-Extralight.otf);
+  src: url(../fonts/PPMori-SemiBold.otf);
+}
+@font-face {
+  font-family: helvetical;
+  src: url(../fonts/HelveticaNeueBold.otf);
 }
 @layer utilities {
   .moriExtra {
     font-family: moriExtra;
-    font-weight: 900;
+  }
+  .leftCenter {
+    left: calc(50% - 1%);
+  }
+  .helvetical {
+    font-family: helvetical;
   }
 }
 @property --tw-translate-x {

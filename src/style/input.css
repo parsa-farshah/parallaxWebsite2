@@ -2,12 +2,21 @@
 /* npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch */
 @font-face {
   font-family: moriExtra;
-  src: url(../fonts/PPMori-Extralight.otf);
+  src: url(../fonts/PPMori-SemiBold.otf);
+}
+@font-face {
+  font-family: helvetical;
+  src: url(../fonts/HelveticaNeueBold.otf);
 }
 
 @layer utilities {
   .moriExtra {
     font-family: moriExtra;
-    font-weight: 900;
+  }
+  .leftCenter {
+    left: calc(50% - 1%);
+  }
+  .helvetical {
+    font-family: helvetical;
   }
 }
