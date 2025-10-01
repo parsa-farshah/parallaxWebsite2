@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car parallax</title>
+    <link rel="stylesheet" href="src/style/output.css" />
+  </head>
+  <body>
+    <main>
+      <div id="divSc" class="w-full h-[100vh] overflow-y-scroll">
+        <!-- scroll height section -->
+        <div id="divSc" class="w-full h-[500vh] bg-[#ebedec]">
+          <!-- navbar -->
+          <div
+            class="w-full h-[60px] absolute top-0 left-0 flex items-center justify-between px-7"
+          >
+            <!-- logo -->
+            <figure class="w-[50%] h-[40px]">
+              <img class="w-[40%] h-full" src="src/images/logo.svg" alt="" />
+            </figure>
+            <!-- right side -->
+            <div class="w-[50%] flex justify-end items-center gap-2">
+              <ul class="items-center gap-4 hidden lg:flex">
+                <!-- gallery -->
+                <div
+                  class="flex items-center overflow-hidden w-[70px] group cursor-pointer"
+                >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-100%] group-hover:translate-x-[10%] duration-300 moriExtra"
+                    >Gallery</span
+                  >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-90%] group-hover:translate-x-[100%] duration-300 moriExtra"
+                    >Gallery</span
+                  >
+                </div>
+                <!-- store -->
+                <div
+                  class="flex items-center overflow-hidden w-[70px] group cursor-pointer"
+                >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-100%] group-hover:translate-x-[30%] duration-300 moriExtra"
+                    >store</span
+                  >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-70%] group-hover:translate-x-[100%] duration-300 moriExtra"
+                    >store</span
+                  >
+                </div>
+                <!-- car tour -->
+                <div
+                  class="flex items-center overflow-hidden w-[70px] group cursor-pointer"
+                >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-100%] group-hover:translate-x-[10%] duration-300 moriExtra"
+                    >cartour</span
+                  >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-90%] group-hover:translate-x-[100%] duration-300 moriExtra"
+                    >cartour</span
+                  >
+                </div>
+                <!-- about -->
+                <div
+                  class="flex items-center overflow-hidden w-[70px] group cursor-pointer"
+                >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-100%] group-hover:translate-x-[10%] duration-300 moriExtra"
+                    >about</span
+                  >
+                  <span
+                    class="text-[#202020] uppercase text-[12px] translate-x-[-90%] group-hover:translate-x-[100%] duration-300 moriExtra"
+                    >about</span
+                  >
+                </div>
+              </ul>
+              <!-- owner ship -->
+              <div
+                class="bg-black w-[120px] h-[30px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group"
+              >
+                <!-- text -->
+                <div class="flex items-center overflow-hidden w-[70px]">
+                  <span
+                    class="text-white uppercase text-[11px] translate-x-[-100%] group-hover:translate-x-0 duration-500 moriExtra"
+                    >OWnership</span
+                  >
+                  <span
+                    class="text-white uppercase text-[11px] translate-x-[-100%] group-hover:translate-x-[100%] duration-500 moriExtra"
+                    >OWnership</span
+                  >
+                </div>
+                <!-- arrow right -->
+                <div
+                  class="flex w-[20px] h-[20px] justify-center items-center overflow-hidden"
+                >
+                  <!-- arrow left -->
+                  <div
+                    class="flex gap-0.5 translate-x-[-100%] group-hover:translate-x-0 duration-500 ml-0.5"
+                  >
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                  </div>
+                  <!-- arrow right -->
+                  <div
+                    class="flex gap-0.5 translate-x-[-100%] group-hover:translate-x-[100%] duration-500"
+                  >
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- first section -->
+          <!-- <div class="w-full"></div> -->
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="src/js/master.js"></script>
+</html>
