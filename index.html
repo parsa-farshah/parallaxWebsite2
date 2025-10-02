@@ -13,7 +13,7 @@
         class="w-[103%] h-[100vh] overflow-y-scroll overflow-x-hidden"
       >
         <!-- scroll height section -->
-        <div id="divSc" class="w-full h-[500vh] bg-[#ebedec] relative">
+        <div id="divSc" class="w-full h-[8000vh] bg-[#ebedec] relative">
           <!----------------------------------- navbar --------------------->
           <div
             id="navbar"
@@ -145,7 +145,7 @@
             <!-- image -->
             <figure
               id="carPng"
-              class="w-[160%] md:w-[120%] lg:w-[80%] absolute md:fixed top-0 leftCenter -translate-x-1/2 duration-300"
+              class="w-[160%] md:w-[120%] lg:w-[80%] absolute md:fixed top-0 leftCenter -translate-x-1/2 duration-300 scale-100"
             >
               <img
                 class="w-full h-full object-cover"
@@ -203,15 +203,110 @@
             </div>
           </div>
           <!-- second section -->
-          <div id="heroCar" class="w-full  md:fixed top-[100%] rounded-4xl h-[100vh] flex overflow-hidden duration-500">
-            <figure class="w-[50%] h-full">
-              <img class="w-full h-full object-cover" src="src/images/heroCar.avif" alt="" />
+          <div
+            id="heroCar"
+            class="w-full md:fixed top-[100%] md:rounded-4xl h-[100vh] flex overflow-hidden duration-500 pointer-events-none"
+          >
+            <figure class="w-[50%] md:w-full h-full hidden md:block">
+              <img
+                class="w-full h-full object-cover"
+                src="src/images/heroCar.avif"
+                alt=""
+              />
             </figure>
-            <figure class="w-[50%] h-full">
-              <img class="w-full h-full object-cover" src="src/images/heroCarTable.avif" alt="" />
+            <figure class="w-full flex md:hidden h-full relative">
+              <img
+                class="w-full h-full object-cover"
+                src="src/images/heroCarTable.avif"
+                alt=""
+              />
+
+              <span
+                class="text-white moriExtra text-lg absolute top-[9%] left-[0%] translate-x-1/2 uppercase z-50"
+                >oilstainlab</span
+              >
+              <p
+                class="text-white moriExtra text-lg absolute top-[15%] left-[-10%] translate-x-1/2 uppercase z-40"
+              >
+                where the past <br />
+                overtakes the future.
+              </p>
+              <div
+                class="w-full h-full z-30 bg-[#00000050] absolute top-0 left-0 duration-300"
+              ></div>
             </figure>
-            <div id="shadowHero" class="w-full h-full bg-[#0000] md:bg-[#000] absolute top-0 left-0 duration-300"></div>
+            <div
+              id="shadowHero"
+              class="w-full h-full bg-[#0000] md:bg-[#000] absolute top-0 left-0 duration-300"
+            ></div>
+            <!-- text -->
+            <div>
+              <span
+                id="oilText"
+                class="text-white moriBook text-2xl absolute top-[20%] right-[25%] translate-x-1/2 uppercase hidden"
+                >oilstainlab</span
+              >
+              <p
+                id="heroTxt"
+                class="text-white moriBook text-2xl absolute top-[27%] right-[19.5%] translate-x-1/2 uppercase hidden"
+              >
+                where the past <br />
+                overtakes the future.
+              </p>
+            </div>
           </div>
+          <!-- third section -->
+          <div
+            id="thirdSec"
+            class="w-full md:fixed top-[100%] md:rounded-2xl h-[100vh] flex overflow-hidden duration-500 pointer-events-none"
+          >
+            <video
+              id="videoSection3"
+              class="w-full h-full object-cover"
+              autoplay
+              muted
+            >
+              <source
+                src="https://cdn.jsdelivr.net/gh/JosephBerry1988/jb_studio@main/car-top-B%26W.mp4?raw=1"
+                type="video/mp4"
+              />
+            </video>
+            <ul
+              class="absolute top-[50%] -translate-y-1/2 left-[5%] -translate-x-1/2 w-[70px] flex flex-wrap gap-3 pointer-events-auto cursor-pointer"
+            >
+              <li
+                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+              >
+                Power
+              </li>
+              <li
+                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+              >
+                Origin
+              </li>
+              <li
+                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+              >
+                Beauty
+              </li>
+              <li
+                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+              >
+                Asylum
+              </li>
+              <li
+                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+              >
+                obsession
+              </li>
+              <li
+                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+              >
+                strength
+              </li>
+            </ul>
+          </div>
+          <!-- third section end -->
         </div>
       </div>
     </main>
