@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -183,6 +184,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -195,14 +199,23 @@
   .top-\[-5\%\] {
     top: -5%;
   }
+  .top-\[-10\%\] {
+    top: -10%;
+  }
   .top-\[-15\%\] {
     top: -15%;
+  }
+  .top-\[-20\%\] {
+    top: -20%;
   }
   .top-\[-30\%\] {
     top: -30%;
   }
   .top-\[-35\%\] {
     top: -35%;
+  }
+  .top-\[-40\%\] {
+    top: -40%;
   }
   .top-\[-45\%\] {
     top: -45%;
@@ -219,8 +232,14 @@
   .top-\[-75\%\] {
     top: -75%;
   }
+  .top-\[-80\%\] {
+    top: -80%;
+  }
   .top-\[-100\%\] {
     top: -100%;
+  }
+  .top-\[-120\%\] {
+    top: -120%;
   }
   .top-\[0\%\] {
     top: 0%;
@@ -275,6 +294,9 @@
   }
   .top-\[85\%\] {
     top: 85%;
+  }
+  .top-\[90\%\] {
+    top: 90%;
   }
   .top-\[95\%\] {
     top: 95%;
@@ -589,11 +611,23 @@
   .bg-\[\#00000050\] {
     background-color: #00000050;
   }
+  .bg-\[\#d0d0d0\] {
+    background-color: #d0d0d0;
+  }
+  .bg-\[\#d4d6d5\] {
+    background-color: #d4d6d5;
+  }
   .bg-\[\#ebedec\] {
     background-color: #ebedec;
   }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .object-cover {
     object-fit: cover;
@@ -1053,6 +1087,11 @@
   .md\:text-\[180px\] {
     @media (width >= 48rem) {
       font-size: 180px;
+    }
+  }
+  .lg\:fixed {
+    @media (width >= 64rem) {
+      position: fixed;
     }
   }
   .lg\:top-\[40\%\] {

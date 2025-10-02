@@ -10,6 +10,7 @@ const _oilText = document.querySelector("#oilText");
 const _heroTxt = document.querySelector("#heroTxt");
 const _thirdSec = document.querySelector("#thirdSec");
 const _videoSection3 = document.querySelector("#videoSection3");
+const _fourth = document.querySelector("#fourth");
 _divSc.addEventListener("scroll", () => {
   let st = parseInt(_divSc.scrollTop);
 
@@ -183,5 +184,66 @@ _divSc.addEventListener("scroll", () => {
     _thirdSec.classList.remove("top-[0%]");
     _videoSection3.pause();
     // _videoSection3.removeAttribute("autoplay", "autoplay");
+  }
+  if (st > _vh * 6) {
+    _thirdSec.classList.remove("top-[0%]");
+    _fourth.classList.remove("top-[100%]");
+    _thirdSec.classList.add("top-[-10%]");
+    _fourth.classList.add("top-[90%]");
+    _videoSection3.pause();
+  } else {
+    _thirdSec.classList.remove("top-[-10%]");
+    _fourth.classList.remove("top-[90%]");
+    _thirdSec.classList.add("top-[0%]");
+    _fourth.classList.add("top-[100%]");
+  }
+  if (st > _vh * 6.5) {
+    _thirdSec.classList.remove("top-[-10%]");
+    _fourth.classList.remove("top-[90%]");
+    _thirdSec.classList.add("top-[-20%]");
+    _fourth.classList.add("top-[80%]");
+  } else {
+    _thirdSec.classList.remove("top-[-20%]");
+    _fourth.classList.remove("top-[80%]");
+  }
+  if (st > _vh * 7) {
+    _thirdSec.classList.remove("top-[-20%]");
+    _fourth.classList.remove("top-[80%]");
+
+    _thirdSec.classList.add("top-[-40%]");
+    _fourth.classList.add("top-[60%]");
+  } else {
+    _thirdSec.classList.remove("top-[-40%]");
+    _fourth.classList.remove("top-[60%]");
+  }
+  if (st > _vh * 7.5) {
+    _thirdSec.classList.remove("top-[-40%]");
+    _fourth.classList.remove("top-[60%]");
+
+    _thirdSec.classList.add("top-[-60%]");
+    _fourth.classList.add("top-[40%]");
+  } else {
+    _thirdSec.classList.remove("top-[-60%]");
+    _fourth.classList.remove("top-[40%]");
+  }
+  if (st > _vh * 8) {
+    _thirdSec.classList.remove("top-[-60%]");
+    _fourth.classList.remove("top-[40%]");
+
+    _thirdSec.classList.add("top-[-80%]");
+    _fourth.classList.add("top-[20%]");
+  } else {
+    _thirdSec.classList.remove("top-[-80%]");
+    _fourth.classList.remove("top-[20%]");
+  }
+  if (st > _vh * 8.5) {
+    _thirdSec.classList.remove("top-[-80%]");
+    _fourth.classList.remove("top-[20%]");
+
+    _thirdSec.classList.add("top-[-100%]");
+    _fourth.classList.add("top-[0%]");
+  } else {
+    _thirdSec.classList.remove("top-[-100%]");
+    _fourth.classList.remove("top-[0%]");
   }
 });
