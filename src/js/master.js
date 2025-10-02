@@ -11,6 +11,13 @@ const _heroTxt = document.querySelector("#heroTxt");
 const _thirdSec = document.querySelector("#thirdSec");
 const _videoSection3 = document.querySelector("#videoSection3");
 const _fourth = document.querySelector("#fourth");
+const _bgMan = document.querySelector("#bgMan");
+const _rightSideScroll = document.querySelector("#rightSideScroll");
+const _slideTxt1 = document.querySelector("#slideTxt1");
+const _slideTxt2 = document.querySelector("#slideTxt2");
+const _slideTxt3 = document.querySelector("#slideTxt3");
+const _slideTxt4 = document.querySelector("#slideTxt4");
+
 _divSc.addEventListener("scroll", () => {
   let st = parseInt(_divSc.scrollTop);
 
@@ -245,5 +252,170 @@ _divSc.addEventListener("scroll", () => {
   } else {
     _thirdSec.classList.remove("top-[-100%]");
     _fourth.classList.remove("top-[0%]");
+  }
+  if (st > _vh * 8.75) {
+    _bgMan.classList.remove("w-full");
+    _bgMan.classList.add("w-[97%]");
+  } else {
+    _bgMan.classList.remove("w-[97%]");
+    _bgMan.classList.add("w-full");
+  }
+  if (st > _vh * 9) {
+    _bgMan.classList.remove("w-[97%]");
+    _bgMan.classList.add("w-[94%]");
+  } else {
+    _bgMan.classList.remove("w-[94%]");
+  }
+  if (st > _vh * 9.25) {
+    _bgMan.classList.remove("w-[94%]");
+    _bgMan.classList.add("w-[91%]");
+  } else {
+    _bgMan.classList.remove("w-[91%]");
+  }
+  if (st > _vh * 9.5) {
+    _bgMan.classList.remove("w-[91%]");
+    _bgMan.classList.add("w-[88%]");
+  } else {
+    _bgMan.classList.remove("w-[88%]");
+  }
+  if (st > _vh * 9.75) {
+    _bgMan.classList.remove("w-[88%]");
+    _bgMan.classList.add("w-[80%]");
+  } else {
+    _bgMan.classList.remove("w-[80%]");
+  }
+  if (st > _vh * 10) {
+    _bgMan.classList.remove("w-[80%]");
+    _bgMan.classList.add("w-[70%]");
+    _rightSideScroll.classList.remove("md:top-[100%]");
+    _rightSideScroll.classList.add("md:top-[80%]");
+  } else {
+    _bgMan.classList.remove("w-[70%]");
+    _rightSideScroll.classList.remove("md:top-[80%]");
+    _rightSideScroll.classList.add("md:top-[100%]");
+  }
+  if (st > _vh * 10.25) {
+    _bgMan.classList.remove("w-[70%]");
+    _bgMan.classList.add("w-[60%]");
+    _rightSideScroll.classList.remove("md:top-[80%]");
+    _rightSideScroll.classList.add("md:top-[60%]");
+  } else {
+    _bgMan.classList.remove("w-[60%]");
+    _rightSideScroll.classList.remove("md:top-[60%]");
+  }
+  if (st > _vh * 10.5) {
+    _bgMan.classList.remove("w-[60%]");
+    _bgMan.classList.add("w-[50%]");
+    _rightSideScroll.classList.remove("md:top-[60%]");
+    _rightSideScroll.classList.add("md:top-[40%]");
+    _slideTxt1.classList.remove("ml-0");
+    _slideTxt2.classList.remove("ml-0");
+    _slideTxt3.classList.remove("ml-0");
+    _slideTxt4.classList.remove("ml-0");
+
+    _slideTxt1.classList.add("ml-[20%]");
+    _slideTxt2.classList.add("ml-[-20%]");
+    _slideTxt3.classList.add("ml-[20%]");
+    _slideTxt4.classList.add("ml-[-20%]");
+  } else {
+    _bgMan.classList.remove("w-[50%]");
+    _rightSideScroll.classList.remove("md:top-[40%]");
+    _slideTxt1.classList.remove("ml-[20%]");
+    _slideTxt2.classList.remove("ml-[-20%]");
+    _slideTxt3.classList.remove("ml-[20%]");
+    _slideTxt4.classList.remove("ml-[-20%]");
+  }
+  if (st > _vh * 11) {
+    _rightSideScroll.classList.remove("md:top-[40%]");
+    _rightSideScroll.classList.add("md:top-[20%]");
+    _slideTxt1.classList.remove("ml-[20%]");
+    _slideTxt2.classList.remove("ml-[-20%]");
+    _slideTxt3.classList.remove("ml-[20%]");
+    _slideTxt4.classList.remove("ml-[-20%]");
+
+    _slideTxt1.classList.add("ml-[40%]");
+    _slideTxt2.classList.add("ml-[-40%]");
+    _slideTxt3.classList.add("ml-[40%]");
+    _slideTxt4.classList.add("ml-[-40%]");
+  } else {
+    _rightSideScroll.classList.add("md:top-[20%]");
+    _slideTxt1.classList.remove("ml-[40%]");
+    _slideTxt2.classList.remove("ml-[-40%]");
+    _slideTxt3.classList.remove("ml-[40%]");
+    _slideTxt4.classList.remove("ml-[-40%]");
+  }
+  if (st > _vh * 11.5) {
+    _rightSideScroll.classList.remove("md:top-[20%]");
+    _rightSideScroll.classList.add("md:top-[0%]");
+    _slideTxt1.classList.remove("ml-[40%]");
+    _slideTxt2.classList.remove("ml-[-40%]");
+    _slideTxt3.classList.remove("ml-[40%]");
+    _slideTxt4.classList.remove("ml-[-40%]");
+    _slideTxt1.classList.add("ml-[45%]");
+    _slideTxt2.classList.add("ml-[-45%]");
+    _slideTxt3.classList.add("ml-[45%]");
+    _slideTxt4.classList.add("ml-[-45%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[0%]");
+    _slideTxt1.classList.remove("ml-[45%]");
+    _slideTxt2.classList.remove("ml-[-45%]");
+    _slideTxt3.classList.remove("ml-[45%]");
+    _slideTxt4.classList.remove("ml-[-45%]");
+  }
+  if (st > _vh * 12) {
+    _rightSideScroll.classList.remove("md:top-[0%]");
+    _rightSideScroll.classList.add("md:top-[-20%]");
+    _slideTxt1.classList.remove("ml-[45%]");
+    _slideTxt2.classList.remove("ml-[-45%]");
+    _slideTxt3.classList.remove("ml-[45%]");
+    _slideTxt4.classList.remove("ml-[-45%]");
+
+    _slideTxt1.classList.add("ml-[50%]");
+    _slideTxt2.classList.add("ml-[-50%]");
+    _slideTxt3.classList.add("ml-[50%]");
+    _slideTxt4.classList.add("ml-[-50%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-20%]");
+
+    _slideTxt1.classList.remove("ml-[50%]");
+    _slideTxt2.classList.remove("ml-[-50%]");
+    _slideTxt3.classList.remove("ml-[50%]");
+    _slideTxt4.classList.remove("ml-[-50%]");
+  }
+  if (st > _vh * 12.5) {
+    _rightSideScroll.classList.remove("md:top-[-20%]");
+    _rightSideScroll.classList.add("md:top-[-40%]");
+    _slideTxt1.classList.remove("ml-[50%]");
+    _slideTxt2.classList.remove("ml-[-50%]");
+    _slideTxt3.classList.remove("ml-[50%]");
+    _slideTxt4.classList.remove("ml-[-50%]");
+    _slideTxt1.classList.add("ml-[54%]");
+    _slideTxt2.classList.add("ml-[-54%]");
+    _slideTxt3.classList.add("ml-[54%]");
+    _slideTxt4.classList.add("ml-[-54%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-40%]");
+    _slideTxt1.classList.remove("ml-[54%]");
+    _slideTxt2.classList.remove("ml-[-54%]");
+    _slideTxt3.classList.remove("ml-[54%]");
+    _slideTxt4.classList.remove("ml-[-54%]");
+  }
+  if (st > _vh * 13) {
+    _rightSideScroll.classList.remove("md:top-[-40%]");
+    _rightSideScroll.classList.add("md:top-[-70%]");
+    _slideTxt1.classList.remove("ml-[54%]");
+    _slideTxt2.classList.remove("ml-[-54%]");
+    _slideTxt3.classList.remove("ml-[54%]");
+    _slideTxt4.classList.remove("ml-[-54%]");
+    _slideTxt1.classList.add("ml-[56%]");
+    _slideTxt2.classList.add("ml-[-56%]");
+    _slideTxt3.classList.add("ml-[56%]");
+    _slideTxt4.classList.add("ml-[-56%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-70%]");
+    _slideTxt1.classList.remove("ml-[56%]");
+    _slideTxt2.classList.remove("ml-[-56%]");
+    _slideTxt3.classList.remove("ml-[56%]");
+    _slideTxt4.classList.remove("ml-[-56%]");
   }
 });
