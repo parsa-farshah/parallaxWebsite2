@@ -16,7 +16,8 @@
         <div id="divSc" class="w-full h-[500vh] bg-[#ebedec] relative">
           <!----------------------------------- navbar --------------------->
           <div
-            class="w-full h-[60px] absolute top-0 leftCenter -translate-x-1/2 flex items-center justify-between px-7 z-10"
+            id="navbar"
+            class="w-full h-[60px] absolute md:fixed top-0 md:top-0 leftCenter -translate-x-1/2 flex items-center justify-between px-7 z-10 duration-500 pointer-events-none"
           >
             <!--------------------------------- logo ------------------------------>
             <figure class="w-[50%] h-[40px]">
@@ -136,14 +137,15 @@
             </div>
           </div>
           <!-- first section -->
-          <div class="w-full h-[100vh] relative">
+          <div class="w-full h-[100vh] relative md:fixed pointer-events-none">
             <!-- stage -->
-            <figure class="w-full h-[100%] absolute top-0 left-0">
+            <figure class="w-full h-[100%] absolute md:fixed top-0 left-0">
               <img class="w-full h-full" src="src/images/stage.jpg" alt="" />
             </figure>
             <!-- image -->
             <figure
-              class="w-[160%] md:w-[120%] lg:w-[80%] absolute top-0 leftCenter -translate-x-1/2"
+              id="carPng"
+              class="w-[160%] md:w-[120%] lg:w-[80%] absolute md:fixed top-0 leftCenter -translate-x-1/2 duration-300"
             >
               <img
                 class="w-full h-full object-cover"
@@ -153,17 +155,18 @@
             </figure>
             <!-- text HF -->
             <span
-              class="moriExtra text-[#202020] text-[80px] sm:text-[140px] md:text-[180px] lg:text-[250px] absolute top-[8%] left-[2%]"
+              class="moriExtra text-[#202020] text-[80px] sm:text-[140px] md:text-[180px] lg:text-[250px] absolute md:fixed top-[8%] left-[2%]"
               >HF</span
             >
             <!-- text 11 -->
             <span
-              class="helvetical text-[#202020] text-[80px] sm:text-[140px] md:text-[180px] lg:text-[250px] absolute top-[17%] lg:top-[90%] -translate-y-1/2 right-[2%]"
+              id="elevent"
+              class="helvetical text-[#202020] text-[80px] sm:text-[140px] md:text-[180px] lg:text-[250px]absolute md:fixed top-[17%] lg:top-[90%] -translate-y-1/2 right-[2%] duration-500"
               >11</span
             >
             <!-- list car detail -->
             <div
-              class="w-[95%] lg:w-[285px] absolute bottom-0 left-[50%] lg:left-[60%] -translate-x-1/2"
+              class="w-[95%] lg:w-[285px] absolute md:fixed bottom-0 left-[50%] lg:left-[60%] -translate-x-1/2"
             >
               <div
                 class="flex justify-between items-center border-b border-b-[#35333379] py-1"
@@ -198,6 +201,16 @@
                 </h6>
               </div>
             </div>
+          </div>
+          <!-- second section -->
+          <div id="heroCar" class="w-full  md:fixed top-[100%] rounded-4xl h-[100vh] flex overflow-hidden duration-500">
+            <figure class="w-[50%] h-full">
+              <img class="w-full h-full object-cover" src="src/images/heroCar.avif" alt="" />
+            </figure>
+            <figure class="w-[50%] h-full">
+              <img class="w-full h-full object-cover" src="src/images/heroCarTable.avif" alt="" />
+            </figure>
+            <div id="shadowHero" class="w-full h-full bg-[#0000] md:bg-[#000] absolute top-0 left-0 duration-300"></div>
           </div>
         </div>
       </div>
