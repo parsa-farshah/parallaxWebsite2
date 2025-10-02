@@ -29,7 +29,9 @@
             </figure>
             <!------------------------------------------- right side -------------->
             <div class="w-[50%] flex justify-end items-center gap-2">
-              <ul class="items-center gap-4 hidden lg:flex duration-300">
+              <ul
+                class="items-center gap-4 hidden lg:flex duration-300 pointer-events-auto"
+              >
                 <!-- gallery -->
                 <div
                   class="flex items-center overflow-hidden w-[70px] group cursor-pointer"
@@ -85,7 +87,7 @@
               </ul>
               <!-- owner ship -->
               <div
-                class="bg-black w-[120px] h-[30px] lg:w-[135] lg:h-[42px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group"
+                class="bg-black w-[120px] h-[30px] lg:w-[135] lg:h-[42px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group pointer-events-auto"
               >
                 <!-- text -->
                 <div class="flex items-center overflow-hidden w-[70px]">
@@ -260,51 +262,107 @@
             id="thirdSec"
             class="w-full md:fixed top-[100%] md:rounded-2xl h-[100vh] flex overflow-hidden duration-500 pointer-events-none"
           >
-            <video
-              id="videoSection3"
-              class="w-full h-full object-cover"
-              autoplay
-              muted
-            >
-              <source
-                src="https://cdn.jsdelivr.net/gh/JosephBerry1988/jb_studio@main/car-top-B%26W.mp4?raw=1"
-                type="video/mp4"
-              />
-            </video>
-            <ul
-              class="absolute top-[50%] -translate-y-1/2 left-[5%] -translate-x-1/2 w-[70px] flex flex-wrap gap-3 pointer-events-auto cursor-pointer"
-            >
-              <li
-                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+            <div class="relative w-full h-full">
+              <video
+                id="videoSection3"
+                class="w-full h-full object-cover"
+                autoplay
+                muted
               >
-                Power
-              </li>
-              <li
-                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                <source
+                  src="https://cdn.jsdelivr.net/gh/JosephBerry1988/jb_studio@main/car-top-B%26W.mp4?raw=1"
+                  type="video/mp4"
+                />
+              </video>
+              <!----------------------------- menu on medium size ---------------->
+              <ul
+                class="absolute top-[50%] -translate-y-1/2 left-[8%] md:left-[5%] -translate-x-1/2 w-[70px] flex flex-wrap gap-3 pointer-events-auto cursor-pointer"
               >
-                Origin
-              </li>
-              <li
-                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                <li
+                  class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                >
+                  Power
+                </li>
+                <li
+                  class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                >
+                  Origin
+                </li>
+                <li
+                  class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                >
+                  Beauty
+                </li>
+                <li
+                  class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                >
+                  Asylum
+                </li>
+                <li
+                  class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                >
+                  obsession
+                </li>
+                <li
+                  class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
+                >
+                  strength
+                </li>
+              </ul>
+              <!----------------------- menu on medium size ---------------->
+              <!----------------------- download --------------->
+              <div
+                class="bg-black w-[120px] h-[30px] absolute top-[80%] left-[12%] md:left-[7%] -translate-1/2 lg:w-[135] lg:h-[42px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group pointer-events-auto"
               >
-                Beauty
-              </li>
-              <li
-                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
-              >
-                Asylum
-              </li>
-              <li
-                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
-              >
-                obsession
-              </li>
-              <li
-                class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
-              >
-                strength
-              </li>
-            </ul>
+                <!-- text -->
+                <div class="flex items-center overflow-hidden w-[70px]">
+                  <span
+                    class="text-white uppercase text-[11px] translate-x-[-100%] group-hover:translate-x-0 duration-500 moriExtra"
+                    >download</span
+                  >
+                  <span
+                    class="text-white uppercase text-[11px] translate-x-[-100%] group-hover:translate-x-[100%] duration-500 moriExtra"
+                    >download</span
+                  >
+                </div>
+                <!-- arrow right -->
+                <div
+                  class="flex w-[20px] h-[20px] justify-center items-center overflow-hidden"
+                >
+                  <!-- arrow left -->
+                  <div
+                    class="flex gap-0.5 translate-x-[-100%] group-hover:translate-x-0 duration-500 ml-0.5"
+                  >
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                  </div>
+                  <!-- arrow right -->
+                  <div
+                    class="flex gap-0.5 translate-x-[-100%] group-hover:translate-x-[100%] duration-500"
+                  >
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                    <img
+                      class="w-[7px] h-[11px]"
+                      src="src/images/arrowRightBold.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!----------------------- download --------------->
+            </div>
           </div>
           <!-- third section end -->
         </div>
