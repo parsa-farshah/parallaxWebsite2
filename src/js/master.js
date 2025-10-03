@@ -17,6 +17,7 @@ const _slideTxt1 = document.querySelector("#slideTxt1");
 const _slideTxt2 = document.querySelector("#slideTxt2");
 const _slideTxt3 = document.querySelector("#slideTxt3");
 const _slideTxt4 = document.querySelector("#slideTxt4");
+const _imgSlider = document.querySelector("#imgSlider");
 
 _divSc.addEventListener("scroll", () => {
   let st = parseInt(_divSc.scrollTop);
@@ -355,12 +356,14 @@ _divSc.addEventListener("scroll", () => {
     _slideTxt2.classList.add("ml-[-45%]");
     _slideTxt3.classList.add("ml-[45%]");
     _slideTxt4.classList.add("ml-[-45%]");
+    _imgSlider.setAttribute("src", "src/images/slider2.jpg");
   } else {
     _rightSideScroll.classList.remove("md:top-[0%]");
     _slideTxt1.classList.remove("ml-[45%]");
     _slideTxt2.classList.remove("ml-[-45%]");
     _slideTxt3.classList.remove("ml-[45%]");
     _slideTxt4.classList.remove("ml-[-45%]");
+    _imgSlider.setAttribute("src", "src/images/slider1.jpg");
   }
   if (st > _vh * 12) {
     _rightSideScroll.classList.remove("md:top-[0%]");
@@ -369,6 +372,7 @@ _divSc.addEventListener("scroll", () => {
     _slideTxt2.classList.remove("ml-[-45%]");
     _slideTxt3.classList.remove("ml-[45%]");
     _slideTxt4.classList.remove("ml-[-45%]");
+    _imgSlider.setAttribute("src", "src/images/slider3.jpg");
 
     _slideTxt1.classList.add("ml-[50%]");
     _slideTxt2.classList.add("ml-[-50%]");
@@ -376,6 +380,7 @@ _divSc.addEventListener("scroll", () => {
     _slideTxt4.classList.add("ml-[-50%]");
   } else {
     _rightSideScroll.classList.remove("md:top-[-20%]");
+    // _imgSlider.setAttribute("src", "src/images/slider2.jpg");
 
     _slideTxt1.classList.remove("ml-[50%]");
     _slideTxt2.classList.remove("ml-[-50%]");
@@ -393,12 +398,14 @@ _divSc.addEventListener("scroll", () => {
     _slideTxt2.classList.add("ml-[-54%]");
     _slideTxt3.classList.add("ml-[54%]");
     _slideTxt4.classList.add("ml-[-54%]");
+    _imgSlider.setAttribute("src", "src/images/slider4.jpg");
   } else {
     _rightSideScroll.classList.remove("md:top-[-40%]");
     _slideTxt1.classList.remove("ml-[54%]");
     _slideTxt2.classList.remove("ml-[-54%]");
     _slideTxt3.classList.remove("ml-[54%]");
     _slideTxt4.classList.remove("ml-[-54%]");
+    // _imgSlider.setAttribute("src", "src/images/slider3.jpg");
   }
   if (st > _vh * 13) {
     _rightSideScroll.classList.remove("md:top-[-40%]");
@@ -411,11 +418,127 @@ _divSc.addEventListener("scroll", () => {
     _slideTxt2.classList.add("ml-[-56%]");
     _slideTxt3.classList.add("ml-[56%]");
     _slideTxt4.classList.add("ml-[-56%]");
+    _imgSlider.setAttribute("src", "src/images/slider5.jpg");
   } else {
     _rightSideScroll.classList.remove("md:top-[-70%]");
     _slideTxt1.classList.remove("ml-[56%]");
     _slideTxt2.classList.remove("ml-[-56%]");
     _slideTxt3.classList.remove("ml-[56%]");
     _slideTxt4.classList.remove("ml-[-56%]");
+    // _imgSlider.setAttribute("src", "src/images/slider4.jpg");
+  }
+  if (st > _vh * 13.5) {
+    _rightSideScroll.classList.remove("md:top-[-70%]");
+    _rightSideScroll.classList.add("md:top-[-80%]");
+    _slideTxt1.classList.remove("ml-[56%]");
+    _slideTxt2.classList.remove("ml-[-56%]");
+    _slideTxt3.classList.remove("ml-[56%]");
+    _slideTxt4.classList.remove("ml-[-56%]");
+
+    _slideTxt1.classList.add("ml-[59%]");
+    _slideTxt2.classList.add("ml-[-59%]");
+    _slideTxt3.classList.add("ml-[59%]");
+    _slideTxt4.classList.add("ml-[-59%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-80%]");
+    _slideTxt1.classList.remove("ml-[59%]");
+    _slideTxt2.classList.remove("ml-[-59%]");
+    _slideTxt3.classList.remove("ml-[59%]");
+    _slideTxt4.classList.remove("ml-[-59%]");
+  }
+  if (st > _vh * 14) {
+    _rightSideScroll.classList.remove("md:top-[-80%]");
+    _rightSideScroll.classList.add("md:top-[-100%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-100%]");
+  }
+  if (st > _vh * 14.5) {
+    _rightSideScroll.classList.remove("md:top-[-100%]");
+    _rightSideScroll.classList.add("md:top-[-140%]");
+    _bgMan.classList.remove(
+      "bg-[url(https://cdn.prod.website-files.com/65b920ea5a9cab9c782b01bd/65b920ea5a9cab9c782b0245_maniacs.avif)]"
+    );
+    _bgMan.classList.add(
+      "bg-[url(https://cdn.prod.website-files.com/65b920ea5a9cab9c782b01bd/65b920ea5a9cab9c782b0246_mission.avif)]"
+    );
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-140%]");
+    _bgMan.classList.remove(
+      "bg-[url(https://cdn.prod.website-files.com/65b920ea5a9cab9c782b01bd/65b920ea5a9cab9c782b0246_mission.avif)]"
+    );
+    _bgMan.classList.add(
+      "bg-[url(https://cdn.prod.website-files.com/65b920ea5a9cab9c782b01bd/65b920ea5a9cab9c782b0245_maniacs.avif)]"
+    );
+  }
+  if (st > _vh * 15) {
+    _rightSideScroll.classList.remove("md:top-[-140%]");
+    _rightSideScroll.classList.add("md:top-[-160%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-160%]");
+  }
+  if (st > _vh * 15.5) {
+    _rightSideScroll.classList.remove("md:top-[-160%]");
+    _rightSideScroll.classList.add("md:top-[-190%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-190%]");
+  }
+  if (st > _vh * 16) {
+    _rightSideScroll.classList.remove("md:top-[-190%]");
+    _rightSideScroll.classList.add("md:top-[-220%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-220%]");
+  }
+  if (st > _vh * 16.5) {
+    _rightSideScroll.classList.remove("md:top-[-220%]");
+    _rightSideScroll.classList.add("md:top-[-250%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-250%]");
+  }
+  if (st > _vh * 17) {
+    _rightSideScroll.classList.remove("md:top-[-250%]");
+    _rightSideScroll.classList.add("md:top-[-280%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-280%]");
+  }
+  if (st > _vh * 17.5) {
+    _rightSideScroll.classList.remove("md:top-[-280%]");
+    _rightSideScroll.classList.add("md:top-[-310%]");
+    _bgMan.classList.remove(
+      "bg-[url(https://cdn.prod.website-files.com/65b920ea5a9cab9c782b01bd/65b920ea5a9cab9c782b0246_mission.avif)]"
+    );
+
+    _bgMan.classList.add(
+      "bg-[url(https://cdn.prod.website-files.com/65b920ea5a9cab9c782b01bd/65b920ea5a9cab9c782b0241_machine.avif)]"
+    );
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-310%]");
+    _bgMan.classList.remove(
+      "bg-[url(https://cdn.prod.website-files.com/65b920ea5a9cab9c782b01bd/65b920ea5a9cab9c782b0241_machine.avif)]"
+    );
+  }
+  if (st > _vh * 17.5) {
+    _rightSideScroll.classList.remove("md:top-[-310%]");
+    _rightSideScroll.classList.add("md:top-[-340%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-340%]");
+  }
+  if (st > _vh * 18) {
+    _rightSideScroll.classList.remove("md:top-[-340%]");
+    _rightSideScroll.classList.add("md:top-[-370%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-370%]");
+  }
+  if (st > _vh * 18.5) {
+    _rightSideScroll.classList.remove("md:top-[-370%]");
+    _rightSideScroll.classList.add("md:top-[-390%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-390%]");
+  }
+  if (st > _vh * 19) {
+    _rightSideScroll.classList.remove("md:top-[-390%]");
+    _rightSideScroll.classList.add("md:top-[-430%]");
+  } else {
+    _rightSideScroll.classList.remove("md:top-[-430%]");
   }
 });
+
