@@ -276,7 +276,7 @@
               </video>
               <!----------------------------- menu on medium size ---------------->
               <ul
-                class="absolute top-[50%] -translate-y-1/2 left-[8%] md:left-[5%] -translate-x-1/2 w-[70px] flex flex-wrap gap-3 pointer-events-auto cursor-pointer"
+                class="absolute top-[50%] -translate-y-1/2 left-[11%] md:left-[5%] -translate-x-1/2 w-[70px] flex flex-wrap gap-3 pointer-events-auto cursor-pointer"
               >
                 <li
                   class="moriBook text-[#353333d8] hover:pl-[30px] duration-200 uppercase text-sm relative before:content-[] hover:before:w-[50px] before:h-[1px] before:bg-black before:absolute before:top-[50%] before:right-[105%] before:-translate-y-1/2 before:duration-300 after:content-[] after:w-[10px] after:h-[10px] hover:after:bg-orange-600 after:absolute after:right-[80%] after:top-[50%] after:-translate-y-1/2 after:rounded-full after:duration-300 hover:font-black hover:text-black"
@@ -312,7 +312,7 @@
               <!----------------------- menu on medium size ---------------->
               <!----------------------- download --------------->
               <div
-                class="bg-black w-[120px] h-[30px] absolute top-[80%] left-[12%] md:left-[7%] -translate-1/2 lg:w-[135] lg:h-[42px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group pointer-events-auto"
+                class="bg-black w-[120px] h-[30px] absolute top-[80%] left-[15%] sm:left-[12%] md:left-[7%] -translate-1/2 lg:w-[135] lg:h-[42px] rounded-br-3xl flex items-center justify-center gap-3 cursor-pointer group pointer-events-auto"
               >
                 <!-- text -->
                 <div class="flex items-center overflow-hidden w-[70px]">
@@ -421,7 +421,7 @@
                         >
                       </div>
                       <figure
-                        class="w-[50%] h-[70%] absolute top-1/2 left-1/2 bg-amber-300 -translate-1/2"
+                        class="w-[50%] h-[60%] md:h-[70%] absolute top-1/2 left-1/2 bg-amber-300 -translate-1/2"
                       >
                         <img
                           id="imgSlider"
@@ -464,7 +464,7 @@
                       </p>
                       <figure class="w-full h-[475px]">
                         <img
-                          class="w-full h-full object-cover"
+                          class="w-full h-full object-cover grayscale-100"
                           src="src/images/mission.jpg"
                           alt=""
                         />
@@ -524,7 +524,10 @@
           </div>
           <!-- fifth section -->
 
-          <div class="w-full h-[160vh] bg-[#dadada] md:fixed md:top-0">
+          <div
+            id="fifthSection"
+            class="w-full h-[160vh] bg-[#dadada] md:fixed md:top-[100%] duration-500 pointer-events-none"
+          >
             <div class="w-full h-full relative">
               <span
                 class="absolute top-[1%] left-[3%] uppercase moriExtra text-6xl md:text-[80px] lg:text-[120px] text-[#202020] z-50"
@@ -552,6 +555,67 @@
             </div>
           </div>
           <!-- fifth section -->
+
+          <!-- footer -->
+          <div class="w-full h-[100vh] bg-[#242424] md:fixed md:top-">
+            <div
+              class="w-full h-full relative flex justify-between items-center"
+            >
+              <div
+                class="w-[300px] h-[400px] bg-black mx-auto rounded-3xl overflow-hidden"
+              >
+                <figure class="w-full h-[250px]">
+                  <img
+                    class="w-full h-full object-cover object-top rounded-3xl"
+                    src="src/images/black and white.jpg"
+                    alt=""
+                  />
+                </figure>
+                <h4 class="text-white text-center mt-4 moriExtra">
+                  Parsa Dehghan Pour farashah
+                </h4>
+                <h6 class="text-[#d1d1d1bd] text-center mt-1 moriExtra">
+                  Front End Developer
+                </h6>
+                <ul class="flex w-full mt-3 justify-around">
+                  <li>
+                    <a href="http://github.com/parsa-farshah" target="_blank">
+                      <img
+                        class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                        src="src/images/github.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                        src="src/images/instagram.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                        src="src/images/linkedin.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- footer -->
         </div>
       </div>
     </main>

@@ -19,6 +19,8 @@ const _slideTxt3 = document.querySelector("#slideTxt3");
 const _slideTxt4 = document.querySelector("#slideTxt4");
 const _imgSlider = document.querySelector("#imgSlider");
 
+const _fifthSection = document.querySelector("#fifthSection");
+
 _divSc.addEventListener("scroll", () => {
   let st = parseInt(_divSc.scrollTop);
 
@@ -540,5 +542,86 @@ _divSc.addEventListener("scroll", () => {
   } else {
     _rightSideScroll.classList.remove("md:top-[-430%]");
   }
-});
+  if (st > _vh * 19.5) {
+    _fourth.classList.remove("top-[0%]");
+    _fifthSection.classList.remove("md:top-[100%]");
+    _fourth.classList.add("top-[-20%]");
+    _fifthSection.classList.add("md:top-[80%]");
+  } else {
+    _fourth.classList.remove("top-[-20%]");
+    _fifthSection.classList.remove("md:top-[80%]");
 
+    _fourth.classList.add("top-[0%]");
+    _fifthSection.classList.add("md:top-[100%]");
+  }
+  if (st > _vh * 20) {
+    _fourth.classList.remove("top-[-20%]");
+    _fifthSection.classList.remove("md:top-[80%]");
+    _fourth.classList.add("top-[-40%]");
+    _fifthSection.classList.add("md:top-[60%]");
+  } else {
+    _fourth.classList.remove("top-[-40%]");
+    _fifthSection.classList.remove("md:top-[60%]");
+  }
+  if (st > _vh * 20.5) {
+    _fourth.classList.remove("top-[-40%]");
+    _fifthSection.classList.remove("md:top-[60%]");
+
+    _fourth.classList.add("top-[-60%]");
+    _fifthSection.classList.add("md:top-[40%]");
+  } else {
+    _fourth.classList.remove("top-[-60%]");
+    _fifthSection.classList.remove("md:top-[40%]");
+  }
+  if (st > _vh * 21) {
+    _fourth.classList.remove("top-[-60%]");
+    _fifthSection.classList.remove("md:top-[40%]");
+
+    _fourth.classList.add("top-[-80%]");
+    _fifthSection.classList.add("md:top-[20%]");
+  } else {
+    _fourth.classList.remove("top-[-80%]");
+    _fifthSection.classList.remove("md:top-[20%]");
+  }
+  if (st > _vh * 21.5) {
+    _fourth.classList.remove("top-[-80%]");
+    _fifthSection.classList.remove("md:top-[20%]");
+
+    _fourth.classList.add("top-[-100%]");
+    _fifthSection.classList.add("md:top-[0%]");
+  } else {
+    _fourth.classList.remove("top-[-100%]");
+    _fifthSection.classList.remove("md:top-[0%]");
+  }
+  if (st > _vh * 22) {
+    _fifthSection.classList.remove("md:top-[0%]");
+    _fifthSection.classList.add("md:top-[-20%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-20%]");
+  }
+  if (st > _vh * 22.5) {
+    _fifthSection.classList.remove("md:top-[-20%]");
+    _fifthSection.classList.add("md:top-[-40%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-40%]");
+  }
+  if (st > _vh * 23) {
+    _fifthSection.classList.remove("md:top-[-40%]");
+    _fifthSection.classList.add("md:top-[-60%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-60%]");
+  }
+  if (st > _vh * 23.5) {
+    _fifthSection.classList.remove("md:top-[-60%]");
+    _fifthSection.classList.add("md:top-[-80%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-80%]");
+  }
+
+  if (st > _vh * 24) {
+    _fifthSection.classList.remove("md:top-[-80%]");
+    _fifthSection.classList.add("md:top-[-100%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-100%]");
+  }
+});
