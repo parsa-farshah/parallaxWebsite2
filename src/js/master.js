@@ -21,6 +21,8 @@ const _imgSlider = document.querySelector("#imgSlider");
 
 const _fifthSection = document.querySelector("#fifthSection");
 
+const _footer = document.querySelector("#footer");
+
 _divSc.addEventListener("scroll", () => {
   let st = parseInt(_divSc.scrollTop);
 
@@ -614,14 +616,57 @@ _divSc.addEventListener("scroll", () => {
   if (st > _vh * 23.5) {
     _fifthSection.classList.remove("md:top-[-60%]");
     _fifthSection.classList.add("md:top-[-80%]");
+    _footer.classList.remove("md:top-[100%]");
+    _footer.classList.add("md:top-[80%]");
   } else {
     _fifthSection.classList.remove("md:top-[-80%]");
+
+    _footer.classList.remove("md:top-[80%]");
+    _footer.classList.add("md:top-[100%]");
   }
 
   if (st > _vh * 24) {
     _fifthSection.classList.remove("md:top-[-80%]");
     _fifthSection.classList.add("md:top-[-100%]");
+
+    _footer.classList.remove("md:top-[80%]");
+    _footer.classList.add("md:top-[60%]");
   } else {
     _fifthSection.classList.remove("md:top-[-100%]");
+
+    _footer.classList.remove("md:top-[60%]");
+  }
+
+  if (st > _vh * 24.5) {
+    _fifthSection.classList.remove("md:top-[-100%]");
+    _footer.classList.remove("md:top-[60%]");
+
+    _fifthSection.classList.add("md:top-[-120%]");
+    _footer.classList.add("md:top-[40%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-120%]");
+    _footer.classList.remove("md:top-[40%]");
+  }
+
+  if (st > _vh * 25) {
+    _fifthSection.classList.remove("md:top-[-120%]");
+    _footer.classList.remove("md:top-[40%]");
+
+    _fifthSection.classList.add("md:top-[-140%]");
+    _footer.classList.add("md:top-[20%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-140%]");
+    _footer.classList.remove("md:top-[20%]");
+  }
+
+  if (st > _vh * 25.5) {
+    _fifthSection.classList.remove("md:top-[-140%]");
+    _footer.classList.remove("md:top-[20%]");
+
+    _fifthSection.classList.add("md:top-[-160%]");
+    _footer.classList.add("md:top-[0%]");
+  } else {
+    _fifthSection.classList.remove("md:top-[-160%]");
+    _footer.classList.remove("md:top-[0%]");
   }
 });
