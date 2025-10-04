@@ -54,14 +54,19 @@ This project delivers a stunning **scroll-based visual experience** built with *
 ---
 
 ## 📸 Project Screenshots | پیش‌نمایش پروژه  
+
+### 💻 OverView  
+<img src="src/images/cover.jpg" width="100%" alt="Desktop Screenshot">
+
+
 ### 💻 Desktop View  
-<img src="assets/screenshots/desktop.png" width="100%" alt="Desktop Screenshot">
+<img src="src/images/1.png" width="100%" alt="Desktop Screenshot">
 
 ### 📱 Tablet View  
-<img src="assets/screenshots/tablet.png" width="70%" alt="Tablet Screenshot">
+<img src="src/images/2.png" width="70%" alt="Tablet Screenshot">
 
 ### 📱 Mobile View  
-<img src="assets/screenshots/mobile.png" width="50%" alt="Mobile Screenshot">
+<img src="src/images/3.png" width="50%" alt="Mobile Screenshot">
 
 ---
 > ✨ A creative parallax concept blending design and motion — crafted with passion by Parsa.
